@@ -1,0 +1,24 @@
+jenkins:
+  systemMessage: "Jenkins configured automatically by Jenkins Configuration as Code Plugin\n\n"
+  numExecutors: 5
+  scmCheckoutRetryCount: 2
+  mode: NORMAL
+credentials:
+  system:
+    domainCredentials:
+    - credentials:
+      - usernamePassword:
+          description: "Anthony"
+          id: "Anthony"
+          password: "{AQAAABAAAAAQ5gc8yNYyjEMq0s8ErfYjmfPbtcpnEI+iyltOs9l9X6M=}"
+          scope: GLOBAL
+          username: "Anthony"
+      - basicSSHUserPrivateKey:
+          description: "ssh_admin"
+          id: "ssh_admin"
+          passphrase: "{AQAAABAAAAAQO48AFh+/LetTKSpoWDhXXjWwLuZZUimZb/pK32Fvhi4=}"
+          privateKeySource:
+            directEntry:
+              privateKey: "****"
+          scope: GLOBAL
+          username: "ssh_admin"
